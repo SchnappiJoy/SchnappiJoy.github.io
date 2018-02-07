@@ -1,11 +1,11 @@
 ---
 layout: post
 title: 'windows环境下搭建 jekyll'
-subtitle: ''
+subtitle: 'To be is to be perceived.'
 date: 2018-2-7
 categories: 技术
 cover: 'http://bpic.588ku.com/back_pic/00/13/15/08564453d0190aa.jpg'
-tags: android
+tags: 静态博客 Jekyll Ruby
 ---
 
 ### Jekyll 是什么？
