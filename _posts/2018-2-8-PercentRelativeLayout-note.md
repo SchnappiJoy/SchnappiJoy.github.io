@@ -1,10 +1,10 @@
 ---
 layout: post
 title: '谷歌官方百分比布局-PercentRelativeLayout 笔记'
-subtitle: ''
+subtitle: 'When you fall in love, friends, let yourself fall.'
 date: 2018-2-8
 categories: 笔记
-cover: ''
+cover: 'http://bpic.588ku.com/back_pic/00/04/27/49/34e896fb7cca1c93f170bfafd998913d.jpg'
 tags: android
 ---
 ### 继承关系&&被弃用
@@ -89,4 +89,5 @@ Subclass of RelativeLayout that supports percentage based dimensions and
  </android.support.percent.PercentRelativeLayout>
 
 ````
-[官方链接-自带梯子](https://developer.android.com/reference/android/support/percent/PercentRelativeLayout.html)
+---
+#### 官方链接-自带梯子->https://developer.android.com/reference/android/support/percent/PercentRelativeLayout.html
