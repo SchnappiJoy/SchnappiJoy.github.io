@@ -2,7 +2,7 @@
 layout: post
 title: 'Android数据加密'
 subtitle: 'One man's fault is another man's lesson. '
-date: 2018-2-12
+date: 2018-3-1
 categories: Android 数据加密 混淆 加固 
 cover: 'http://bpic.588ku.com/back_pic/04/91/11/4059083994d5390.jpg'
 tags: android 数据加密 混淆 加固
