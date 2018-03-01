@@ -21,7 +21,7 @@ tags: android 数据加密 混淆 加固
 7. AES key存储在哪里比较好？  
 分段存放，C层（so文件）+String文件（string.xml）+gradle文件；也可以从服务获取
 
-
+---
 
 
 ### 01.目录
