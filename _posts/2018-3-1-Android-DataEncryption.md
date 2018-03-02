@@ -1,14 +1,13 @@
 ---
 layout: post
 title: 'Android数据加密'
-subtitle: 'One man's fault is another man's lesson.'
+subtitle: '转载请注明出处'
 date: 2018-3-1
-categories: 笔记
+categories: android数据加密解密
 cover: 'http://bpic.588ku.com/back_pic/04/91/11/4059083994d5390.jpg'
-tags: android
+tags: android 数据加密解密
 ---
 ### android 数据加密思路
-
 1. 混淆文件（参考：http://www.jianshu.com/p/f3455ecaa56e）
 2. 加固：360加固宝，爱加密等自行选择
 3. HTTPS：现在很多APP都用HTTPS作为网络传输的保证，防止中间人攻击，提高数据传输的安全性（用Retrofit的网络请求框架的，要加上HTTPS也不是什么难事，推荐 http://www.jianshu.com/p/16994e49e2f6 ，这里说的HTTPS是指自签的）
@@ -21,11 +20,10 @@ tags: android
 7. AES key存储在哪里比较好？  
 分段存放，C层（so文件）+String文件（string.xml）+gradle文件；也可以从服务获取
 
----
-<<<<<<< HEAD:_posts/2018-3-1-Android-Data-encryption.md
-=======
 
->>>>>>> 13a9f7dee60ebf0d2c27b9298ca675f724d1fcff:_posts/2018-3-1-Android-DataEncryption.md
+---
+
+
 
 ### 01.目录
 
@@ -59,36 +57,30 @@ tags: android
 &nbsp;&nbsp;&nbsp;&nbsp;**ASCII编码对照表入口-->(http://tool.oschina.net/commons?type=4)**
     
 
-> 获取字符ascii编码
+> 获取字符ascii编码  
 
-		//获取单个字符ascii
-		char ch = 'A';
-		int ascii = ch;
+```java
+	//获取单个字符ascii
+	char ch = 'A';
+	int ascii = ch;
 		
-		//System.out.println(ascii);
+	//System.out.println(ascii);
 		
-		//获取字符串ascii
-		String str = "Hello";
-		char[] charArray = str.toCharArray();
-		for (char c : charArray) {
-			int value = c;
-			System.out.println(value);
-		}
-
-
+	//获取字符串ascii
+	String str = "Hello";
+	char[] charArray = str.toCharArray();
+	for (char c : charArray) {
+	int value = c;
+	System.out.println(value);
+	}
+```
 ### 03.凯撒加密解密
 
 > 古罗马大帝凯撒发明:对字符串偏移
 
+![kaisa](https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1108566231,1444400255&fm=27&gp=0.jpg)
 
-```
-
-```
-![](https://images2015.cnblogs.com/blog/1026866/201610/1026866-20161028113544203-1413480347.png)
-
-
-
-
+```java
 		public static String encrypt(String input, int key) {
 		StringBuilder stringBuilder = new StringBuilder();
 		//获取每一个字符ascii编码
@@ -122,6 +114,7 @@ tags: android
 		return stringBuilder.toString();
 	}
 
+```
 
 ### 04.频度分析法破解凯撒加密算法
 
@@ -136,27 +129,29 @@ tags: android
 
 > 示例代码
 
-
-		String input = "A";//一个英文字母占1个字节（Byte）
-			String input2 = "我爱你";//一个中文utf-8编码表中占3个字节，一个中文gbk编码表中占2个字节
+```java
+	String input = "A";//一个英文字母占1个字节（Byte）
+		String input2 = "我爱你";//一个中文utf-8编码表中占3个字节，一个中文gbk编码表中占2个字节
 			
-			byte[] bytes = input.getBytes();//获取字符对应的Byte数组
-			System.out.println(bytes.length);
+		byte[] bytes = input.getBytes();//获取字符对应的Byte数组
+		System.out.println(bytes.length);
 			
-			byte[] bytes2 = input2.getBytes();
-			byte[] bytes3 = input2.getBytes("GBK");
-			System.out.println(bytes2.length);
-			System.out.println("gbk编码："+bytes3.length);
+		byte[] bytes2 = input2.getBytes();
+		byte[] bytes3 = input2.getBytes("GBK");
+		System.out.println(bytes2.length);
+		System.out.println("gbk编码："+bytes3.length);
 			
-			char[] charArray = input.toCharArray();
-			for (char c : charArray) {
-				int ascii = c;
-				System.out.println(ascii);
-				//转成二进制
-				String binaryString = Integer.toBinaryString(ascii);
-				System.out.println(binaryString);
+		char[] charArray = input.toCharArray();
+		for (char c : charArray) {
+			int ascii = c;
+			System.out.println(ascii);
+			//转成二进制
+			String binaryString = Integer.toBinaryString(ascii);
+			System.out.println(binaryString);
 			}
 
+
+```
 
 ### 06.常见对称加密算法介绍
 
@@ -181,6 +176,7 @@ tags: android
 
 > 加密算法、安全领域大量使用getInstance(参数) 方法
 
+```java
 	public static void main(String[] args) {
 		String input = "我爱你";
 		String password = "12345678";//秘钥:des秘钥长度是64个bit（位）
@@ -199,9 +195,10 @@ tags: android
 		}
 	}
 
-
+```
 ### 08.DES解密
 
+```java
 	public static byte[] encrypt(String input, String password) {
 		try {
 			//  1.创建cipher对象，cipher加密算法核心类
@@ -218,7 +215,8 @@ tags: android
 		}
 		return null;
 	}
-	
+
+
 	/**
 	 * DES解密
 	 */
@@ -238,7 +236,7 @@ tags: android
 		}
 		return null;
 	}
-
+```
 
 ### 09.Base64编码和解码
 
@@ -253,6 +251,7 @@ tags: android
 > 2.解密前对密文解码
 
 
+```java
 	public static String encrypt(String input, String password) {
 		try {
 			//  1.创建cipher对象，cipher加密算法核心类
@@ -290,9 +289,11 @@ tags: android
 		return null;
 	}
 
+```
 
 ### 10.AES加密解密
 
+```java
 	public static String encrypt(String input, String password) {
 		try {
 			//对称加密三部曲
@@ -336,7 +337,7 @@ tags: android
 		return null;
 	}
 
-
+```
 ### 11.对称加密密钥长度分析
 
 > DES秘钥长度：8个字符
@@ -392,6 +393,7 @@ tags: android
 
 > 不能手动指定，必须由系统生成：公钥和私钥
 
+```java
 	//非对称加密三部曲
 	//1.创建cipher对象
 	Cipher cipher = Cipher.getInstance(TRANSFORMATION);
@@ -405,13 +407,13 @@ tags: android
 	//获取公钥和私钥字符串
 	String priateKeyStr = Base64.encode(privateKey.getEncoded());
 	String publicKeyStr = Base64.encode(publicKey.getEncoded());
-
+```
 
 ### 17.非对称加密RSA加密
 
 > 公钥加密和私钥加密
 
-
+```java
 	public static String encryptByPrivateKey(String input, PrivateKey privateKey) {
 		String encode;
 		try {
@@ -450,7 +452,7 @@ tags: android
 	}
 
 
-
+```
 
 ### 18.非对称加密RSA分段加密
 
@@ -458,6 +460,7 @@ tags: android
 
 > 超过117字节，分段加密
 
+```java
 	public static String encryptByPrivateKey(String input, PrivateKey privateKey) {
 		String encode;
 		try {
@@ -492,10 +495,11 @@ tags: android
 		}
 		return null;
 	}
-
+```
 
 ### 19.非对称加密RSA分段解密
 
+```java
 	public static String decryptByPrivateKey(String input, PrivateKey privateKey) {
 		String encode;
 		try {
@@ -530,7 +534,7 @@ tags: android
 		}
 		return null;
 	}
-
+```
 
 ### 20.非对称加密保存秘钥对
 
@@ -538,14 +542,14 @@ tags: android
 
 > 第一次生成存储起来
 
-
+```java
 		KeyFactory kf = KeyFactory.getInstance(ALGORITHM);
 			//字符串秘钥转成对象类型
 			
 			PrivateKey privateKey = kf.generatePrivate(new PKCS8EncodedKeySpec(Base64.decode(PRIVATE_KEY)));
 			PublicKey publicKey = kf.generatePublic(new X509EncodedKeySpec(Base64.decode(PUBLIC_KEY)));
 
-
+```
 ### 21.消息摘要介绍
 
 > MessageDigest：消息摘要，摘要信息（唯一的），软件用判断正版盗版软件
@@ -561,6 +565,7 @@ tags: android
 
 ### 22.消息摘要md5的使用
 
+```java
 	public static String md5(String input) {
 		try {
 			StringBuilder stringBuilder = new StringBuilder();
@@ -575,10 +580,11 @@ tags: android
 		}
 		return null;
 	}
-
+```
 
 ### 23.获取文件md5值
 
+```java
 	public static String md5File(String filePath){
 		FileInputStream fis = null;
 		try {
@@ -601,7 +607,7 @@ tags: android
 		}
 		return null;
 	}
-
+```
 
 ### 24.消息摘要sha1和sha256的使用
 
@@ -620,7 +626,7 @@ tags: android
 
 > 只要是用户密码必须使用md5（不可逆的），服务器存储的是密文
 
-
+```java
 	InputStream ins = null;
 	String usrename = "heima104";
 	String password = "123456";
@@ -639,6 +645,7 @@ tags: android
 		IoUtils.close(ins);
 	}
 
+```
 > 撞库破解md5：不可能穷尽所有密文，加密多次，加盐
 
 
@@ -648,6 +655,7 @@ tags: android
 
 > 作用：校验参数是否被篡改，保证数据传输安全
 
+```java
 		public static boolean verity(String input, PublicKey publicKey, String sign) {
 		try {
 			//1.获取数字签名对象
@@ -684,7 +692,7 @@ tags: android
 		return null;
 	}
 
-
+```
 
 ### 27.数字签名流程图分析
 
@@ -704,6 +712,7 @@ tags: android
 
 >  对登录信息（用户名、密码、时间戳 签名）
 
+```java
 	InputStream ins = null;
 		String usrename = "heima104";
 		String password = "123456";
@@ -731,11 +740,12 @@ tags: android
 			IoUtils.close(ins);
 		}
 
-
+```
 ### 29.数字签名应用实战-避免抓包
 
 > 对提交参数md5：如果用户没有登录过，存储到数据库；如果登录过不让登录，该url已经失效
 
+```java
 	String url = "http://120.77.241.119/EncryptServer/login_v6?"+input+"&sign="+sign;
 			URL url2 = new URL(url);
 			String md5 = MD5Utils.md5(input+"&sign="+sign);
@@ -745,6 +755,7 @@ tags: android
 			ins = conn.getInputStream();
 			String result = IoUtils.convertStreamToString(ins);
 
+```
 > 手机验证码
 ### 30.加密算法总结
 
@@ -777,4 +788,3 @@ tags: android
 	* 签名：必须使用私钥
 	* 校验：必须使用公钥
 	* 最常用算法SHA256withRSA
-
