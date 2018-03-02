@@ -427,6 +427,6 @@ public class LoadView extends View {
 
 
 ## 如果有什么不足的地方 欢迎大佬指正 (*/ω＼*)
-![image](https://pic3.zhimg.com/80/v2-8bd01aa1fbeb7ce4522e30776e0034a3_hd.jpg)
+![image](http://img.mp.itc.cn/upload/20170709/57e6124d9a324f5bb46e8f31a3cd6e9e.jpg)
 
 # 最后感谢小伙伴 ==摘星的你== (〃'▽'〃)
