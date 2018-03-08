@@ -20,7 +20,7 @@ tags: android 数据加密解密
 7. AES key存储在哪里比较好？  
 分段存放，C层（so文件）+String文件（string.xml）+gradle文件；也可以从服务获取
 
-参考：https://www.jianshu.com/p/d4fee3a2de82
+> 原链接：https://www.jianshu.com/p/d4fee3a2de82
 
 ---
 
