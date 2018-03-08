@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '谷歌官方百分比布局-PercentRelativeLayout 笔记'
-subtitle: 'When you fall in love, friends, let yourself fall.'
+subtitle: '转载请注明出处'
 date: 2018-2-8
 categories: 笔记
 cover: 'http://bpic.588ku.com/back_pic/00/04/27/49/34e896fb7cca1c93f170bfafd998913d.jpg'
