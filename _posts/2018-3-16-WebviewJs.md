@@ -432,6 +432,46 @@ tags: Android WebView Js
 
 ```
 
+<center>
+ <font color="#4590a3" size="4px">测试的html</font>
+ </center>  
+ 
+<br>
+
+<div style="align: center">
+<img src="https://raw.githubusercontent.com/SchnappiJoy/SchnappiJoy.github.io/master/assets/illustration/testhtml.jpg"/>
+</div>
+
+
+```java
+<html>
+<body>
+<br><br>
+<a><h1>js中调用本地方法</h1></a>
+<script>
+        function sayHello()
+        {
+             alert("Hello")
+
+         }
+
+           function sayConfirm()
+        {
+
+             confirm("Hello")
+         }
+         var aTag = document.getElementsByTagName('a')[0];
+         aTag.addEventListener('click', function(){
+        //调用android本地方法
+            control.toastMessage("js中调用本地方法");
+             return false;
+          }, false);
+
+</script>
+</body>
+</html>
+```
+
 >  ##### 参考文章：
 
 1. [Android：这是一份全面 & 详细的Webview使用攻略
