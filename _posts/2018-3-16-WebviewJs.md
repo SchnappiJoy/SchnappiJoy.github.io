@@ -101,6 +101,22 @@ tags: Android WebView Js
          */
 //        WebView.loadData(String data, String mimeType, String encoding);
 
+
+        //***sdk19以上采用evaluateJavascript方法，在回调方法里又返回值，效率优于前一种，
+        // ***毕竟当前android 4.4还是有少量的用户的。为了兼顾所有用户和执行效率问题，采用两种方式混合使用。
+//        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT) {
+//            //4.4以下
+//            mWebView.loadUrl("http://schnappi.top/");
+//        } else {
+//            //4.4以上，包括4.4
+//            mWebView.evaluateJavascript("http://schnappi.top/", new ValueCallback<String>() {
+//                @Override
+//                public void onReceiveValue(String value) {
+//
+//                }
+//            });
+//        }
+
         //************************************WebViewClient类*******************************************
         // 作用：处理各种通知 & 请求事件
         mWebView.setWebViewClient(new WebViewClient() {
