@@ -14,9 +14,6 @@ tags: Android WebView Js
 <!--<div style="align: center">-->
 <!--<img src="http://upload-images.jianshu.io/upload_images/2182065-91ff11ffeb37cff2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"/>-->
 <!--</div>-->
-<div style="align: center">
-<img src="https://note.youdao.com/yws/api/personal/file/8C22AC7FB1D645CB8EEC3D24C3D55D87?method=download&shareKey=91c78a3afa94c98d1d04f7033cea50c4"/>
-</div>
 
 ![image](https://note.youdao.com/yws/api/personal/file/8C22AC7FB1D645CB8EEC3D24C3D55D87?method=download&shareKey=91c78a3afa94c98d1d04f7033cea50c4)
  
