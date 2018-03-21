@@ -18,7 +18,7 @@ jekyll是一个简单的免费的Blog生成工具，类似WordPress。但是和W
 ### 如何搭建
 #### 1.1安装Ruby
 下载ruby: http://rubyinstaller.org/downloads/  
-![install_ruby](https://raw.githubusercontent.com/SchnappiJoy/SchnappiJoy.github.io/master/assets/printscreen/install_ruby.png)  
+![install_ruby](https://raw.githubusercontent.com/SchnappiJoy/SchnappiJoy.github.io/master/assets/illustration/install_ruby.png)  
 
 我下载的是ruby2.3.3 (x64)、Devkit (x64) 如果你是32位系统就下载32位的。 &nbsp;&nbsp;
 安装ruby后记得配置环境变量，也可以在安装过程中**勾选**自动添加变量。
@@ -29,7 +29,7 @@ jekyll是一个简单的免费的Blog生成工具，类似WordPress。但是和W
 在Devkit的解压目录中 &nbsp;&nbsp;shift+鼠标右键&nbsp;在此处打开命令窗口，输入命令
 ruby dk.rb init &nbsp;后文件夹内会多出来一个config.ym ,打开添加Ruby的路径，如图:  
 
-![devkit_config.yml](https://raw.githubusercontent.com/SchnappiJoy/SchnappiJoy.github.io/master/assets/printscreen/devkit_config.png)
+![devkit_config.yml](https://raw.githubusercontent.com/SchnappiJoy/SchnappiJoy.github.io/master/assets/illustration/devkit_config.png)
 
 #### 1.4 安装DevKit和cucumber插件 &nbsp; (cucumber：管它有没有用先安上再说)
 ##### 1.1 gem update --system
