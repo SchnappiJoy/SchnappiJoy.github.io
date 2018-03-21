@@ -8,7 +8,7 @@ cover: 'http://bpic.588ku.com/back_pic/00/04/27/49/34e896fb7cca1c93f170bfafd9989
 tags: android
 ---
 ### 继承关系&&被弃用
-![](https://raw.githubusercontent.com/SchnappiJoy/SchnappiJoy.github.io/master/assets/printscreen/percent_relative_layout1.png)
+![](https://raw.githubusercontent.com/SchnappiJoy/SchnappiJoy.github.io/master/assets/illustration/percent_relative_layout1.png)
 
 This class was deprecated in API level 26.1.0.
 consider using ConstraintLayout and associated layouts instead. The following shows how to replicate the functionality of percentage layouts with a ConstraintLayout. The Guidelines are used to define each percentage break point, and then a Button view is stretched to fill the gap:  
@@ -17,8 +17,8 @@ consider using ConstraintLayout and associated layouts instead. The following sh
 考虑使用约束布局和相关的布局。下面的内容展示了如何用约束布局来复制百分比布局的功能。指南被用来定义每个百分比的断点，然后一个按钮视图被拉伸来填补空白:
 
 ### 代替方法->ConstraintLayout
-![](https://raw.githubusercontent.com/SchnappiJoy/SchnappiJoy.github.io/master/assets/printscreen/percent_relative_layout3.png)
-![](https://raw.githubusercontent.com/SchnappiJoy/SchnappiJoy.github.io/master/assets/printscreen/percent_relative_layout2.png)
+![](https://raw.githubusercontent.com/SchnappiJoy/SchnappiJoy.github.io/master/assets/illustration/percent_relative_layout3.png)
+![](https://raw.githubusercontent.com/SchnappiJoy/SchnappiJoy.github.io/master/assets/illustration/percent_relative_layout2.png)
 
 ---
 
