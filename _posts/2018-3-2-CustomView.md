@@ -421,7 +421,7 @@ public class LoadView extends View {
 
 ```
 ### 效果图如下
-![gif](https://raw.githubusercontent.com/SchnappiJoy/SchnappiJoy.github.io/master/assets/printscreen/jdfw.gif)
+![gif](https://raw.githubusercontent.com/SchnappiJoy/SchnappiJoy.github.io/master/assets/illustration/jdfw.gif)
 
 ---
 
