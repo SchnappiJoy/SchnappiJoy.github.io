@@ -629,7 +629,7 @@ tags: android 数据加密解密
 
 ```java
 	InputStream ins = null;
-	String usrename = "heima104";
+	String usrename = "android104";
 	String password = "123456";
 	try {
 		String url = "http://120.77.241.119/EncryptServer/login?username=" 
@@ -715,7 +715,7 @@ tags: android 数据加密解密
 
 ```java
 	InputStream ins = null;
-		String usrename = "heima104";
+		String usrename = "android104";
 		String password = "123456";
 		System.out.println(System.currentTimeMillis());
 		StringBuilder stringBuilder = new StringBuilder();
