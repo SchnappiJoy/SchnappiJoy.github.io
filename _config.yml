@@ -57,9 +57,8 @@ postPatterns: 'circuitBoard'
 
 # SNS settings 配置社交网站url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
-  weibo: 'weibo.com/3310183894/profile?topnav=1&wvr=6&is_all=1'
+  weibo:  '//weibo.com/u/3310183894'
   github: '//github.com/TianHeZheng'
-  email: 'mail.163.com/js6/main.jsp?sid=rAMOiyZmXruamepyfZmmykrxGeffXHmb&df=unknow#module=welcome.WelcomeModule%7C%7B%7D'
 
 
 # Tags 设置标签
