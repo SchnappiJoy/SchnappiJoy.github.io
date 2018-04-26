@@ -1,7 +1,7 @@
 ﻿# Site settings 配置站点
-title: '郑天河的独立博客'
+title: 'Joe的独立博客'
 description: 'Android开发工程师，热爱技术。很高兴能在这里与你分享我对技术和生活的思考。'
-keyword: '郑天河, 郑天河的独立博客, 郑天河的博客, Android,Java，Kotlin'
+keyword: 'Joe, 郑天河, 郑超, 王新宇,Java，Kotlin，Android'
 url: 'http://schnappi.top' # your host
 
 # if you don't need baseurl, you should leave this value blank.
@@ -17,7 +17,7 @@ footer:
   since: 2017
 
 # Author 配置博主信息
-author: '郑天河'
+author: 'Joe'
 nickname: ''
 bio: 'Android开发工程师'
 avatar: '/assets/img/profile2.png'
