@@ -375,7 +375,7 @@ public class RotateView extends View {
 
 >  #### 结合TwinklingRefreshLayout的效果图
 
-![image](https://note.youdao.com/share/?id=3ebf1d3e4a1510935d0b4f826e85709d&type=note#/)
+![image](http://note.youdao.com/noteshare?id=6301d38d64b5daf25f3fd228da5fb6f9)
 <br>
-![image]https://note.youdao.com/share/?id=6301d38d64b5daf25f3fd228da5fb6f9&type=note#/)
+![image](http://note.youdao.com/noteshare?id=3ebf1d3e4a1510935d0b4f826e85709d)
 
