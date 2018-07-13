@@ -347,12 +347,35 @@ public class RotateView extends View {
     }
         
 ```
+  <center>
+ <font color="#4590a3" size="4px">xml</font>
+ </center>  
  
 <br>
 
+```java
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:onRefreshCommand="@{viewModel.uc.onRefreshCommand}"
+        app:tr_enable_loadmore="false"
+        app:tr_head_height="70dp"
+        app:tr_max_head_height="85dp">
+        
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/background"-->
+            <!--android:orientation="vertical">
+        <!--</LinearLayout>-->
+
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+```
+
 >  #### 结合TwinklingRefreshLayout的效果图
 
-![image](http://note.youdao.com/noteshare?id=3ebf1d3e4a1510935d0b4f826e85709d)
+![image](https://note.youdao.com/share/?id=3ebf1d3e4a1510935d0b4f826e85709d&type=note#/)
 <br>
-![image](http://note.youdao.com/noteshare?id=6301d38d64b5daf25f3fd228da5fb6f9)
+![image]https://note.youdao.com/share/?id=6301d38d64b5daf25f3fd228da5fb6f9&type=note#/)
 
