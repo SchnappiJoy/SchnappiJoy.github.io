@@ -63,23 +63,6 @@ tags: Android 逐帧动画 FrameAnimation
         android:background="@drawable/frame_animation_list"/>
 
 </LinearLayout>
-
-```
-  
-
- <center>
- <font color="#4590a3" size="4px">arrts</font>
- </center>
- 
- <br>
- 
- ```css
-    <declare-styleable name="LoadingView">
-        <attr name="circle_colors" format="string" />
-        <attr name="CircleSpeed" format="integer" />
-        <attr name="SweepAngle" format="float" />
-        <attr name="strokeWidth" format="float" />
-    </declare-styleable>
 ```
 
 >  #### 结合dialog的效果图
